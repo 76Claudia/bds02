@@ -22,7 +22,7 @@ public class EventDTO implements Serializable {
 		this.name = name;
 		this.date = date;
 		this.url = url;
-		this.cityId = cityId;
+		this.setCityId(cityId);
 	}
 	
 	public EventDTO(Event entity) {
@@ -72,4 +72,5 @@ public class EventDTO implements Serializable {
 	public void setCityId(Long cityId) {
 		this.cityId = cityId;
 	}
+
 }
